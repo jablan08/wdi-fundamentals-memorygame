@@ -19,7 +19,9 @@ var cards = [
 		suit: "diamonds",
 		cardImage: "images/king-of-diamonds.png"
 	},
-];
+]; /*.sort(function() {
+  return .5 - Math.random();
+}); used to randomize cards*/
 
 var cardsInPlay = [];
 
@@ -42,6 +44,10 @@ var flipCard = function () {
 	};
 };	
 
+var myFunction = function() {
+  location.reload();
+}
+
 var createBoard = function () {
 	for (var i = 0; i < cards.length; i++) {
 		var cardElement = document.createElement('img');
@@ -52,6 +58,7 @@ var createBoard = function () {
 
 	}
 };
+
 
 createBoard();
 
