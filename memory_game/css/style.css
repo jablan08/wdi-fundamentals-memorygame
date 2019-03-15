@@ -29,6 +29,7 @@ a {
 
 .IG {
 	color: #F15B31;
+	border-bottom: 2px solid transparent;
 }
 
 h2 {
@@ -116,8 +117,12 @@ button {
 	text-decoration: none;
 	text-transform: uppercase;
 	padding: 0 20px;
-
+	border-bottom: 2px solid transparent;
+	border
 }
 
+.IG:hover, button:hover {
+	border-color: #F15B31;
+}
 
 
